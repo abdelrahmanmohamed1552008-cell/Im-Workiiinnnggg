@@ -1,0 +1,133 @@
+body {
+    background-color: whitesmoke;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.top {
+    background-color: #9dd15a;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+#main-header {
+    flex: 1;
+    font-size: 50px;
+
+}
+
+.topimg {
+    width: 420px;
+    height: 100px;
+}
+
+.buildings,
+.someone,
+.dollar {
+    width: 35px;
+    height: 35px;
+    margin-top: 30px;
+}
+
+#ubuildings,
+#usomeone,
+#udollar {
+    color: #4caf50;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.row>div {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: gray;
+}
+
+input,
+select {
+    display: block;
+    width: 98%;
+    padding: 10px;
+    border: 1px black;
+    /* جامده دي */
+    border-style: dotted;
+    border-radius: 5px;
+    background-color: beige;
+}
+
+.hr {
+    border: none;
+    border-top: 2px dashed #d1cfcf;
+    /* تعبت  فيها الحته دي */
+}
+
+.submitbtn {
+    background-color: #9dd15a;
+    padding: 20px;
+    padding-left: 40px;
+    border: 1px;
+    border-radius: 0 0 10px 10px;
+
+    button {
+        width: 70px;
+        height: 30px;
+        color: gray;
+        cursor: pointer;
+    }
+}
+/* spicy from me جدعنه مني */
+@media (max-width: 768px) {
+    #main-header {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .topimg {
+        width: 90%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row > div {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    input,
+    select {
+        width: 90%;
+    }
+
+    .submitbtn button {
+        width: 100%;
+        height: 40px;
+    }
+}

@@ -1,0 +1,319 @@
+:root {
+    --bg: #f5f5f5;
+    --white: #ffffff;
+    --black: #000000;
+    --progress: #e0dede;
+    --progress-bar: #808080;
+    --text: #555555;
+    --big-text: #1a1a1a;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+p {
+    color: var(--text);
+    margin-bottom: 30px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--big-text);
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 28px;
+    color: var(--big-text);
+    font-family: "Italianno", cursive;
+}
+
+.nav-links {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: rgb(221, 221, 188);
+    /* بيج غامق ي روان */
+}
+
+/* header */
+.home-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.words,
+.home-main {
+    margin-left: 20px;
+}
+
+.btn {
+    background-color: var(--text);
+    color: var(--white);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn:hover {
+    background: var(--progress);
+    color: var(--black);
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+/* skills */
+.skills {
+    max-width: 250px;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.name {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--big-text);
+}
+
+.progress {
+    background: var(--progress);
+    border-radius: 10px;
+    height: 8px;
+    cursor: pointer;
+}
+
+.html-bar,
+.css-bar,
+.javascript-bar,
+.react-bar {
+    height: 100%;
+    background: var(--progress-bar);
+    border-radius: 10px;
+}
+
+.html-bar {
+    width: 98%;
+}
+
+.css-bar {
+    width: 90%;
+}
+
+.javascript-bar {
+    width: 10%;
+}
+
+.react-bar {
+    width: 8%;
+}
+
+/* projects */
+.projects {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.project,
+.project-con {
+    background: var(--white);
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+}
+
+.project:hover,
+.progress:hover,
+.project-con:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* about page */
+.about-header,
+.contact-header {
+    text-align: center;
+}
+
+.about-text,
+.points {
+    padding: 20px;
+    line-height: 170%;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.point {
+    line-height: 220%;
+}
+
+.points-h,
+.much {
+    text-align: center;
+}
+
+.step {
+    color: var(--big-text);
+    font-weight: bolder;
+}
+
+.goal {
+    color: var(--big-text);
+    font-weight: bold;
+    background: linear-gradient(30deg, red, white, lightblue);
+    border-radius: 3px;
+    padding: 3px;
+}
+
+/* projects page */
+.pro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.project-con a {
+    background: linear-gradient(140deg, #a9edea, #fed6e3);
+    text-decoration: none;
+    color: var(--black);
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.project-con a:hover {
+    background: linear-gradient(70deg, #8cc5c2, #d6afbc);
+    color: var(--white);
+}
+
+/* contact page */
+.contact-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.option a {
+    color: #607e86;
+    text-decoration: none;
+    line-height: 180%;
+}
+
+.option {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 150px;
+}
+
+/* form */
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--progress-bar);
+}
+
+button {
+    background: var(--black);
+    color: var(--white);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(30deg, #607e86, #623c81);
+}
+
+
+
+/* الميديا خرا كويري */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .pro {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .words,
+    .home-main {
+        margin-left: 0px;
+    }
+}

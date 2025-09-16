@@ -1,0 +1,33 @@
+#main-header {
+    background-color: beige;
+    font-size: xx-large;
+}
+
+.four {
+    background-color: lightblue;
+    color: white;
+}
+
+.five {
+    background-color: rgb(157, 83, 226);
+    color: white;
+}
+
+body {
+    align-content: center;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.No {
+    width: 400px;
+    height: 280px;
+    text-align: center;
+}
+/* extra spice from me */
+@media (max-width: 768px) {
+    .No {
+        width: 100%;
+        height: auto;
+    }
+}
